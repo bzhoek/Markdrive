@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192C79D1EF83A3330D676F21 /* libPods-MarkdriveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E3BB50BA8754EB790FD03F /* libPods-MarkdriveTests.a */; };
 		495B633C1B90A02E00C004F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495B633B1B90A02E00C004F9 /* AppDelegate.swift */; };
 		495B633E1B90A02E00C004F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495B633D1B90A02E00C004F9 /* Images.xcassets */; };
 		495B63411B90A02E00C004F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495B633F1B90A02E00C004F9 /* MainMenu.xib */; };
 		495B634D1B90A02E00C004F9 /* MarkdriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495B634C1B90A02E00C004F9 /* MarkdriveTests.swift */; };
+		49C2831A1B91E40400ABF345 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C283181B91E40400ABF345 /* MasterViewController.swift */; };
+		49C2831B1B91E40400ABF345 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C283181B91E40400ABF345 /* MasterViewController.swift */; };
+		49C2831C1B91E40400ABF345 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C283191B91E40400ABF345 /* MasterViewController.xib */; };
+		49C2831D1B91E40400ABF345 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C283191B91E40400ABF345 /* MasterViewController.xib */; };
+		49C283211B930A9C00ABF345 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C283201B930A9C00ABF345 /* WebKit.framework */; };
+		DA814E0B9AF4FCD538BC8579 /* libPods-Markdrive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BB01926035C53FB8888269 /* libPods-Markdrive.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1847A7E0AEA0F682AEC41312 /* Pods-Markdrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Markdrive.release.xcconfig"; path = "Pods/Target Support Files/Pods-Markdrive/Pods-Markdrive.release.xcconfig"; sourceTree = "<group>"; };
+		3CE28B43B8504FFB66E1F199 /* Pods-MarkdriveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkdriveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarkdriveTests/Pods-MarkdriveTests.release.xcconfig"; sourceTree = "<group>"; };
 		495B63361B90A02E00C004F9 /* Markdrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markdrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495B633A1B90A02E00C004F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495B633B1B90A02E00C004F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +41,15 @@
 		495B63461B90A02E00C004F9 /* MarkdriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495B634B1B90A02E00C004F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495B634C1B90A02E00C004F9 /* MarkdriveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdriveTests.swift; sourceTree = "<group>"; };
+		49C283131B90A06500ABF345 /* Markdrive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Markdrive-Bridging-Header.h"; sourceTree = "<group>"; };
+		49C283141B90A06500ABF345 /* MarkdriveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarkdriveTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		49C283181B91E40400ABF345 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		49C283191B91E40400ABF345 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		49C283201B930A9C00ABF345 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		53F158A60A83F2C791A088BF /* Pods-MarkdriveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkdriveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarkdriveTests/Pods-MarkdriveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78E3BB50BA8754EB790FD03F /* libPods-MarkdriveTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarkdriveTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90BB01926035C53FB8888269 /* libPods-Markdrive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Markdrive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C814ED3842F5745AF4E0C27 /* Pods-Markdrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Markdrive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Markdrive/Pods-Markdrive.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C283211B930A9C00ABF345 /* WebKit.framework in Frameworks */,
+				DA814E0B9AF4FCD538BC8579 /* libPods-Markdrive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192C79D1EF83A3330D676F21 /* libPods-MarkdriveTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +79,10 @@
 				495B63381B90A02E00C004F9 /* Markdrive */,
 				495B63491B90A02E00C004F9 /* MarkdriveTests */,
 				495B63371B90A02E00C004F9 /* Products */,
+				F960D90EBA0A376FBE8AC5E3 /* Pods */,
+				74AEFB2D7DFAF70ECC657DE7 /* Frameworks */,
+				49C283131B90A06500ABF345 /* Markdrive-Bridging-Header.h */,
+				49C283141B90A06500ABF345 /* MarkdriveTests-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				495B633B1B90A02E00C004F9 /* AppDelegate.swift */,
+				49C283181B91E40400ABF345 /* MasterViewController.swift */,
+				49C283191B91E40400ABF345 /* MasterViewController.xib */,
 				495B633D1B90A02E00C004F9 /* Images.xcassets */,
 				495B633F1B90A02E00C004F9 /* MainMenu.xib */,
 				495B63391B90A02E00C004F9 /* Supporting Files */,
@@ -106,6 +133,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		74AEFB2D7DFAF70ECC657DE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49C283201B930A9C00ABF345 /* WebKit.framework */,
+				90BB01926035C53FB8888269 /* libPods-Markdrive.a */,
+				78E3BB50BA8754EB790FD03F /* libPods-MarkdriveTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F960D90EBA0A376FBE8AC5E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C814ED3842F5745AF4E0C27 /* Pods-Markdrive.debug.xcconfig */,
+				1847A7E0AEA0F682AEC41312 /* Pods-Markdrive.release.xcconfig */,
+				53F158A60A83F2C791A088BF /* Pods-MarkdriveTests.debug.xcconfig */,
+				3CE28B43B8504FFB66E1F199 /* Pods-MarkdriveTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 495B63501B90A02E00C004F9 /* Build configuration list for PBXNativeTarget "Markdrive" */;
 			buildPhases = (
+				C875C1B827467ED6ABBD3ED5 /* Check Pods Manifest.lock */,
 				495B63321B90A02E00C004F9 /* Sources */,
 				495B63331B90A02E00C004F9 /* Frameworks */,
 				495B63341B90A02E00C004F9 /* Resources */,
+				933D0B6DE64E538B1AB51FD4 /* Embed Pods Frameworks */,
+				501553E3EF39382D7B845F8C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 495B63531B90A02E00C004F9 /* Build configuration list for PBXNativeTarget "MarkdriveTests" */;
 			buildPhases = (
+				DF307E583321ECA5106C6794 /* Check Pods Manifest.lock */,
 				495B63421B90A02E00C004F9 /* Sources */,
 				495B63431B90A02E00C004F9 /* Frameworks */,
 				495B63441B90A02E00C004F9 /* Resources */,
+				E646F0E098FFEE23FDCD860C /* Embed Pods Frameworks */,
+				2879C44A8DB019BF672082BE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +242,7 @@
 			files = (
 				495B633E1B90A02E00C004F9 /* Images.xcassets in Resources */,
 				495B63411B90A02E00C004F9 /* MainMenu.xib in Resources */,
+				49C2831C1B91E40400ABF345 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,10 +250,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C2831D1B91E40400ABF345 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2879C44A8DB019BF672082BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarkdriveTests/Pods-MarkdriveTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		501553E3EF39382D7B845F8C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Markdrive/Pods-Markdrive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		933D0B6DE64E538B1AB51FD4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Markdrive/Pods-Markdrive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C875C1B827467ED6ABBD3ED5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF307E583321ECA5106C6794 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E646F0E098FFEE23FDCD860C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarkdriveTests/Pods-MarkdriveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		495B63321B90A02E00C004F9 /* Sources */ = {
@@ -206,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495B633C1B90A02E00C004F9 /* AppDelegate.swift in Sources */,
+				49C2831A1B91E40400ABF345 /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495B634D1B90A02E00C004F9 /* MarkdriveTests.swift in Sources */,
+				49C2831B1B91E40400ABF345 /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,30 +472,39 @@
 		};
 		495B63511B90A02E00C004F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C814ED3842F5745AF4E0C27 /* Pods-Markdrive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Markdrive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Markdrive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		495B63521B90A02E00C004F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1847A7E0AEA0F682AEC41312 /* Pods-Markdrive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Markdrive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Markdrive-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		495B63541B90A02E00C004F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F158A60A83F2C791A088BF /* Pods-MarkdriveTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -357,14 +517,18 @@
 				INFOPLIST_FILE = MarkdriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarkdriveTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markdrive.app/Contents/MacOS/Markdrive";
 			};
 			name = Debug;
 		};
 		495B63551B90A02E00C004F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE28B43B8504FFB66E1F199 /* Pods-MarkdriveTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -373,6 +537,7 @@
 				INFOPLIST_FILE = MarkdriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarkdriveTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markdrive.app/Contents/MacOS/Markdrive";
 			};
 			name = Release;
@@ -396,6 +561,7 @@
 				495B63521B90A02E00C004F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495B63531B90A02E00C004F9 /* Build configuration list for PBXNativeTarget "MarkdriveTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +570,7 @@
 				495B63551B90A02E00C004F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

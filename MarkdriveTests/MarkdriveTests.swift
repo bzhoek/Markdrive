@@ -1,36 +1,70 @@
-//
-//  MarkdriveTests.swift
-//  MarkdriveTests
-//
-//  Created by Bas van der Hoek on 28/08/15.
-//  Copyright (c) 2015 Bas van der Hoek. All rights reserved.
-//
-
 import Cocoa
 import XCTest
 
 class MarkdriveTests: XCTestCase {
+
+    private let kKeychainItemName = "Drive API"
+    private let kClientID = "41088727215-i68simor9c7ianupie1f0f8hnev2a6nk.apps.googleusercontent.com"
+    private let kClientSecret = "l1sIRaNJ88g8kJtyC-jzArKF"
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testApiKey() {
+        let readyExpectation = expectationWithDescription("ready")
+        
+        let service: GTLServiceDrive = GTLServiceDrive()
+        service.APIKey = "AIzaSyDkqpkC7mHUnH97Vc5d65yPYItbgHZ3jEk"
+        let query = GTLQueryDrive.queryForFilesList() as! GTLQueryDrive
+        service.executeQuery(query, completionHandler: { (ticket, result, error) -> Void in
+            if let error = error {
+                println(error.localizedDescription)
+                return
+            }
+            
+            let files = result as? GTLDriveFileList
+//            if let items = files!.items() where !items.isEmpty {
+//                for file in items as! [GTLDriveFile] {
+//                    println("\(file.title) (\(file.identifier))")
+//                }
+//            } else {
+//                println("No files found.")
+//            }
+            readyExpectation.fulfill()
+        })
+        
+        waitForExpectationsWithTimeout(5.0, handler:nil)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testOAuth() {
+        let readyExpectation = expectationWithDescription("ready")
+        GTMOAuth2WindowController.authForGoogleFromKeychainForName(
+            kKeychainItemName,
+            clientID: kClientID,
+            clientSecret: kClientSecret
+        )
+        
+        
+        let service: GTLServiceDrive = GTLServiceDrive()
+        let query = GTLQueryDrive.queryForFilesList() as! GTLQueryDrive
+        service.executeQuery(query, completionHandler: { (ticket, result, error) -> Void in
+            if let error = error {
+                println(error.localizedDescription)
+                return
+            }
+            
+            let files = result as? GTLDriveFileList
+            //            if let items = files!.items() where !items.isEmpty {
+            //                for file in items as! [GTLDriveFile] {
+            //                    println("\(file.title) (\(file.identifier))")
+            //                }
+            //            } else {
+            //                println("No files found.")
+            //            }
+            readyExpectation.fulfill()
+        })
+        
+
+        
+        waitForExpectationsWithTimeout(5.0, handler:nil)
+
     }
     
 }
