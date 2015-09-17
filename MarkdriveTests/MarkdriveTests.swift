@@ -25,10 +25,10 @@ class MarkdriveTests: XCTestCase {
       let files = result as? GTLDriveFileList
       if let items = files!.items() where !items.isEmpty {
         for file in items as! [GTLDriveFile] {
-          println("\(file.title) (\(file.identifier))")
+          print("\(file.title) (\(file.identifier))")
         }
       } else {
-        println("No files found.")
+        print("No files found.")
       }
       readyExpectation.fulfill()
     })

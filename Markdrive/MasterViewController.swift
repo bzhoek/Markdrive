@@ -20,13 +20,13 @@ class MasterViewController: NSViewController {
   
   override func viewDidAppear() {
     if let authorizer = service.authorizer, canAuthorize = authorizer.canAuthorize where canAuthorize {
-      println("AUTHORIZED")
+      print("AUTHORIZED")
       self.fetchFiles()
     } else {
-      println("UNAUTHORIZED")
+      print("UNAUTHORIZED")
       GTMOAuth2WindowController(scope: kGTLAuthScopeDriveReadonly, clientID: kClientID, clientSecret: kClientSecret, keychainItemName: kKeychainItemName, resourceBundle: nil)
         .signInSheetModalForWindow(nil, completionHandler: { (authentication, error) -> Void in
-          println("RESULT \(authentication)")
+          print("RESULT \(authentication)")
           self.service.authorizer = authentication
           self.fetchFiles()
         })
@@ -35,18 +35,17 @@ class MasterViewController: NSViewController {
   
   func fetchFiles() {
     let query = GTLQueryDrive.queryForFilesList() as! GTLQueryDrive
-    query.q = "mimeType = '"
     service.executeQuery(query, completionHandler: { (ticket, result, error) -> Void in
       if let error = error {
-        println(error.localizedDescription)
+        print(error.localizedDescription)
       } else {
         let files = result as? GTLDriveFileList
         if let items = files!.items() where !items.isEmpty {
           for file in items as! [GTLDriveFile] {
-            println("\(file.title) (\(file.identifier))")
+            print("\(file.title) (\(file.identifier))")
           }
         } else {
-          println("No files found.")
+          print("No files found.")
         }
       }
     })
