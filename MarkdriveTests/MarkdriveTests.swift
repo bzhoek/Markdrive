@@ -24,18 +24,19 @@ class MarkdriveTests: XCTestCase {
         XCTFail(error.localizedDescription)
       }
       
-      let files = result as? GTLDriveFileList
-      if let items = files!.items() where !items.isEmpty {
-        for file in items as! [GTLDriveFile] {
-          print("\(file.title) (\(file.identifier))")
+      if let files = result as? GTLDriveFileList {
+        if let items = files.items() where !items.isEmpty {
+          for file in items as! [GTLDriveFile] {
+            print("\(file.title) (\(file.identifier))")
+          }
+        } else {
+          print("No files found.")
         }
-      } else {
-        print("No files found.")
       }
       readyExpectation.fulfill()
     })
     
-    waitForExpectationsWithTimeout(5.0, handler:nil)
+    waitForExpectationsWithTimeout(10.0, handler:nil)
   }
   
 }
