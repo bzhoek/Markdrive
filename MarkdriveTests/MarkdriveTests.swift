@@ -16,7 +16,9 @@ class MarkdriveTests: XCTestCase {
       clientID: kClientID,
       clientSecret: kClientSecret
     )
+
     let query = GTLQueryDrive.queryForFilesList() as! GTLQueryDrive
+    query.q = "mimeType = 'text/plain'"
     service.executeQuery(query, completionHandler: { (ticket, result, error) -> Void in
       if let error = error {
         XCTFail(error.localizedDescription)
