@@ -17,6 +17,8 @@
 		49C2831C1B91E40400ABF345 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C283191B91E40400ABF345 /* MasterViewController.xib */; };
 		49C2831D1B91E40400ABF345 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C283191B91E40400ABF345 /* MasterViewController.xib */; };
 		49C283211B930A9C00ABF345 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C283201B930A9C00ABF345 /* WebKit.framework */; };
+		49F989141C0E1F8B003B7EB8 /* GoogleDriveClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F989131C0E1F8B003B7EB8 /* GoogleDriveClient.swift */; };
+		49F989151C0E1F8B003B7EB8 /* GoogleDriveClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F989131C0E1F8B003B7EB8 /* GoogleDriveClient.swift */; };
 		DA814E0B9AF4FCD538BC8579 /* libPods-Markdrive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BB01926035C53FB8888269 /* libPods-Markdrive.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,7 @@
 		49C283181B91E40400ABF345 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		49C283191B91E40400ABF345 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 		49C283201B930A9C00ABF345 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		49F989131C0E1F8B003B7EB8 /* GoogleDriveClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveClient.swift; sourceTree = "<group>"; };
 		53F158A60A83F2C791A088BF /* Pods-MarkdriveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkdriveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarkdriveTests/Pods-MarkdriveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		78E3BB50BA8754EB790FD03F /* libPods-MarkdriveTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarkdriveTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BB01926035C53FB8888269 /* libPods-Markdrive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Markdrive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				495B633B1B90A02E00C004F9 /* AppDelegate.swift */,
+				49F989131C0E1F8B003B7EB8 /* GoogleDriveClient.swift */,
 				49C283181B91E40400ABF345 /* MasterViewController.swift */,
 				49C283191B91E40400ABF345 /* MasterViewController.xib */,
 				495B633D1B90A02E00C004F9 /* Images.xcassets */,
@@ -356,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F989141C0E1F8B003B7EB8 /* GoogleDriveClient.swift in Sources */,
 				495B633C1B90A02E00C004F9 /* AppDelegate.swift in Sources */,
 				49C2831A1B91E40400ABF345 /* MasterViewController.swift in Sources */,
 			);
@@ -365,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F989151C0E1F8B003B7EB8 /* GoogleDriveClient.swift in Sources */,
 				495B634D1B90A02E00C004F9 /* MarkdriveTests.swift in Sources */,
 				49C2831B1B91E40400ABF345 /* MasterViewController.swift in Sources */,
 			);
