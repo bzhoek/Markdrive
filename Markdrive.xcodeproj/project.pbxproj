@@ -43,6 +43,7 @@
 		495B63461B90A02E00C004F9 /* MarkdriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495B634B1B90A02E00C004F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495B634C1B90A02E00C004F9 /* MarkdriveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdriveTests.swift; sourceTree = "<group>"; };
+		49B63DB61C17812E002637EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49C283131B90A06500ABF345 /* Markdrive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Markdrive-Bridging-Header.h"; sourceTree = "<group>"; };
 		49C283141B90A06500ABF345 /* MarkdriveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarkdriveTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		49C283181B91E40400ABF345 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		495B632D1B90A02E00C004F9 = {
 			isa = PBXGroup;
 			children = (
+				49B63DB61C17812E002637EE /* README.md */,
 				495B63381B90A02E00C004F9 /* Markdrive */,
 				495B63491B90A02E00C004F9 /* MarkdriveTests */,
 				495B63371B90A02E00C004F9 /* Products */,
