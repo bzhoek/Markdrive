@@ -24,7 +24,7 @@ class MasterViewController: NSViewController {
       self.fetchFiles()
     } else {
       print("UNAUTHORIZED")
-      GTMOAuth2WindowController(scope: kGTLAuthScopeDriveReadonly, clientID: kClientID, clientSecret: kClientSecret, keychainItemName: kKeychainItemName, resourceBundle: nil)
+      GTMOAuth2WindowController(scope: kGTLAuthScopeDriveFile, clientID: kClientID, clientSecret: kClientSecret, keychainItemName: kKeychainItemName, resourceBundle: nil)
         .signInSheetModalForWindow(nil, completionHandler: { (authentication, error) -> Void in
           print("RESULT \(authentication)")
           self.service.authorizer = authentication
